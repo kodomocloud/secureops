@@ -5,5 +5,5 @@ output admin_role_name {
 
 output admin_bound_claim {
     value = vault_jwt_auth_backend_role.example.bound_claims   
-     description = "Admin Bound Claim"
+     description = "Admin Bound Claims"
 }
