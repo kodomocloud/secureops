@@ -79,7 +79,7 @@ EOT
 resource "vault_jwt_auth_backend_role" "example" {
   backend         = vault_jwt_auth_backend.main.path
   role_name       = "tfc-amin-role"
-  token_policies  = [vault_policy.main.name]
+  token_policies  = [vault_policy.example.name]
 
   bound_audiences = ["vault.workload.identity"]
   bound_claims_type = "glob"
